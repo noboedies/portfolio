@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://images.icon-icons.com/1674/PNG/512/person_110935.png" type="image/x-icon">
+    <title>Tausif_Alam-Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+        integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        header {
+            background-image: url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg");
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.424) !important;
+        }
+
+        nav a:hover {
+            color: rgb(255, 208, 0) !important;
+        }
+
+        .dropdown-menu {
+            background-color: rgba(0, 0, 0, 0.729) !important;
+        }
+
+        .dropdown-menu a {
+            color: whitesmoke;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: rgba(216, 216, 216, 0.727) !important;
+        }
+
+        #divine {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: orange;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        footer p {
+            margin: auto;
+            width: max-content;
+            padding: 5px 15px;
+            margin-top: 20px;
+        }
+
+        #section {
+            background-image: linear-gradient(rgba(238, 133, 133, 0.096), rgba(182, 116, 116, 0.151)), url("https://images.pexels.com/photos/9589472/pexels-photo-9589472.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg border border-dark border-1 rounded-4">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white rounded-3 bg-dark px-4 fw-bold" href="index.html">Tausif Alam</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
+                        <!-- <ul class="navbar-nav mb-2 mb-lg-0 ms-auto"> -->
+                        <!-- <ul class="navbar-nav mb-2 mb-lg-0 mx-auto"> -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html"><i
+                                    class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html"><i class="fa-solid fa-bars-progress"></i>
+                                Projects</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Social Media
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://www.linkedin.com/in/tausif-alam123/"
+                                        target="_blank">LinkedIn</a></li>
+                                <li><a class="dropdown-item" href="https://github.com/noboedies"
+                                        target="_blank">Github</a></li>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer"><i class="fa-solid fa-address-card"></i></i> Contact</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-success mx-2" href="https://wa.me/919155740089?text=Hi Tausif!"
+                        target="_blank">WhatsApp</a>
+                    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">Get In
+                        Touch</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-success text-white">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Get In Touch</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form name="google-sheet">
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                                            <input type="text" name="Name" class="form-control" pattern="[a-zA-Z ]+"
+                                                minlength="2" maxlength="20" required id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Phone</label>
+                                            <input type="tel" name="Phone" class="form-control" pattern="[0-9]+"
+                                                minlength="10" maxlength="10" required id="exampleInputPassword1">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                                <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div style="text-align: center;">
+            <a id="divine" href="https://noboedies.github.io/Crowd_management_portal/">🛕DivineFlow</a>
+        </div>
+    </section>
+    <section id="section" id="crowd-management-project"
+        class="project-section p-6 bg-gray-50 rounded-2xl shadow-lg my-10">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-indigo-700">DivineFlow – Smart Crowd Management Portal</h2>
+            <p class="text-gray-700 mb-6">
+                <a href="https://noboedies.github.io/Crowd_management_portal/" target="_blank"
+                    class="text-blue-600 underline">Live Demo</a>
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Overview</h3>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+                DivineFlow is a responsive front-end web portal designed to handle crowd management challenges at large
+                pilgrimage sites.
+                It provides real-time awareness of visitor density, slot-based bookings, queue estimates, and emergency
+                alerts.
+                The project focuses on creating a seamless, user-friendly interface that supports visitors,
+                administrators, and volunteers in maintaining safety and efficiency.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Key Features</h3>
+            <ul class="list-disc ml-6 text-gray-700 mb-6">
+                <li>Live crowd-density and queue-time dashboard for major temples.</li>
+                <li>Slot-based booking interface for pilgrims and devotees.</li>
+                <li>Emergency alert section for real-time safety notifications.</li>
+                <li>Volunteer registration and management section.</li>
+                <li>Multi-site dashboard (e.g., Somnath, Dwarka, Varanasi).</li>
+                <li>Completely responsive design with mobile compatibility.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Technologies Used</h3>
+            <ul class="list-disc ml-6 text-gray-700 mb-6">
+                <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (Vanilla)</li>
+                <li><strong>UI Design:</strong> Custom responsive layout with cards and dashboards</li>
+                <li><strong>Hosting:</strong> GitHub Pages</li>
+                <li><strong>Version Control:</strong> Git</li>
+                <li><strong>Assets:</strong> Icons, images of temples, and alert visuals</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">My Role & Responsibilities</h3>
+            <ul class="list-disc ml-6 text-gray-700 mb-6">
+                <li>Designed and developed the entire front-end architecture and UI layout.</li>
+                <li>Created dynamic components for crowd data, queue time, and alerts.</li>
+                <li>Implemented responsive design for multi-device support.</li>
+                <li>Deployed project using GitHub Pages for public access.</li>
+                <li>Ensured clarity, usability, and clean interface for all sections.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Learning Outcomes</h3>
+            <ul class="list-disc ml-6 text-gray-700 mb-6">
+                <li>Enhanced skills in front-end development and responsive UI design.</li>
+                <li>Gained practical experience in deploying web projects on GitHub Pages.</li>
+                <li>Developed understanding of data-driven UI for real-world applications.</li>
+                <li>Learned how to design intuitive dashboards for public safety use cases.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Future Enhancements</h3>
+            <ul class="list-disc ml-6 text-gray-700 mb-6">
+                <li>Integrate backend API for live data feeds (Node.js / Express).</li>
+                <li>Add authentication for admins and volunteers.</li>
+                <li>Include real-time analytics using Chart.js or D3.js.</li>
+                <li>Implement multilingual support and push notifications for alerts.</li>
+                <li>Convert into a PWA (Progressive Web App) for offline usage.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Why This Project Matters</h3>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                Managing large crowds at pilgrimage sites is a real-world challenge that impacts safety and comfort for
+                millions of visitors.
+                This project showcases how technology and design can come together to create a meaningful, user-centric
+                solution.
+                It highlights not just technical expertise in HTML, CSS, and JavaScript, but also strong UI/UX thinking
+                and problem-solving ability.
+            </p>
+
+
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-dark p-5 text-center text-white">
+        <h6 class="text-warning">Contact</h6>
+        <h3>How to Contact Me</h3>
+        <p data-aos="fade-right" data-aos-delay="100" class="bg-secondary rounded-4">
+            <a class="nav-link" href="tel:9155740089"> <span class="text-warning"><i
+                        class="fa-solid fa-phone"></i></span> 9155740089</a>
+        </p>
+        <p data-aos="fade-left" data-aos-delay="300" class="bg-secondary rounded-4">
+            <a class="nav-link" href="mailto:123tausifalam123@gmail.com"> <span class="text-warning"><i
+                        class="fa-solid fa-envelope"></i></span> 123tausifalam123@gmail.com</a>
+        </p>
+        <!-- <p class="bg-secondary rounded-4">
+            <a class="nav-link" href="https://www.youtube.com/incapp"> <span class="text-warning"><i class="fa-brands fa-square-youtube"></i></span> youtube.com/incapp</a> -->
+        <!-- </p>
+        <p class="bg-secondary rounded-4">
+            <a class="nav-link" href="https://www.facebook.com/incapp"> <span class="text-warning"><i class="fa-brands fa-square-facebook"></i></span> facebook.com/incapp</a>
+        </p>
+        <p class="bg-secondary rounded-4">
+            <a class="nav-link" href="https://www.instagram.com/incapp.in"> <span class="text-warning"><i class="fa-brands fa-instagram"></i></span> instagram.com/incapp.in</a> -->
+        </p>
+    </footer>
+    <p class="bg-secondary p-2 text-center text-white">
+        <small>
+            Design & Develop by Tausif Alam
+        </small>
+    </p>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+    integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+    integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-MXe5EK5gyK+fbhwQy/dukwz9fw71HZcsM4KsyDBDTvMyjymkiO0M5qqU0lF4vqLI4VnKf1+DIKf1GM6RFkO8PA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</html>
